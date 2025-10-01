@@ -6,6 +6,7 @@ import { AuthModule } from './auth/auth.module';
 import { SupabaseModule } from './shared/supabase/supabase.module';
 import { WorkoutsModule } from './workouts/workouts.module';
 import { RemindersModule } from './reminders/reminders.module';
+import { NutritionModule } from './nutrition/nutrition.module';
 
 @Module({
   imports: [
@@ -14,7 +15,7 @@ import { RemindersModule } from './reminders/reminders.module';
       envFilePath: '.env',
     }),
     SupabaseModule, 
-    AuthModule, WorkoutsModule, RemindersModule
+    AuthModule, WorkoutsModule, RemindersModule, NutritionModule
   ],
   controllers: [AppController],
   providers: [AppService],
